@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="seccion_formulario">
+        <h3>Rellena los datos</h3>
+  <form action="#" method="post" name="formu" enctype="multipart/form-data">
+
+          <div id="datos">
+             <label for="opciones">Coches alquiler</label><br/>
+             <select id="opciones" name="opciones">
+                 <option value="" selected="selected">Selecciona</option>
+                 <option value="15000">Coche familiar</option>
+                 <option value="20000">Coche dinámico</option>
+                 <option value="50000">Coche deportivo</option>
+             </select>
+             <label id="numero" for="cantidad">Número</label>
+             <input type="text" id="cantidad" name="numero" value="" size="1" maxlength="1" onkeypress="return solo_numero(event);" /><br/>
+             <input type="radio" checked="checked" name="estado" value="50" />
+             Nuevo
+             <input type="hidden" id="nuevo" value="5000" />$5000<br/>
+             <input type="radio" name="estado" value="0" />Seminuevo
+             <input type="hidden" id="seminuevo" value="" />
+             <div id="checkbox">
+             <input type="checkbox" id="iva" name="impuesto" value="21" />Con IVA
+             <input type="hidden" id="iva" value="" />21%<br/>
+           </div>
+             <label id="calendar" for="fecha">Fecha alquiler:</label>
+             <input type="text" id="fecha" name="dia" value="Lunes, 28-Nov-2022" size="22" maxlength="20" disabled="disabled" onselect="tratarCalendario('fecha')"; />
+<a href="#"> <i class="fa-solid fa-calendar-days boton" id="selector"></i></a><br/>
+             <label id="etiqueta" for="precio">Precio final:</label>
+             <input type="text" id="precio" name="precio_final" value="" size="10" maxlength="10"  /><br/>
+
+
+          </div>
+
+  </form>
+
+  <script src="https://kit.fontawesome.com/83ee683d70.js" crossorigin="anonymous"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>
